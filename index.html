@@ -1,8 +1,31 @@
     <style>
 
-        #top {
-            background-color: rgba(0, 0, 250, 0.178);
-            height: 17em;
+        #top1 {
+            height: 3em;
+            display: flex;
+            line-height: 3em;
+        }
+
+        #topspacer {
+            width: 109em;
+        }
+
+        #top2 {
+            height: 14em;
+            display: flex;
+        }
+
+        .toplink {
+            margin-right: 2em;
+            text-decoration: none;
+            color:rgb(51, 51, 51);
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+
+        #square {
+            height:3;
+            padding-top: 12;
         }
 
         #mid {
@@ -14,12 +37,12 @@
         }
 
         #bot {
-            background-color: orange;
+
         }
         
         #logo {
             display: flex;
-            width: 18em;
+            width: 17em;
             height: auto;
             justify-content: center;
             align-items: center;
@@ -64,9 +87,21 @@
 
     </style>
     <html>
-        <div id="top">
-            <p>test</p>
+
+        <div id="top1">
+            <a href="https://www.w3schools.com" class="toplink">About</a> 
+            <a href="https://www.w3schools.com" class="toplink">Store</a> 
+
+            <div id="topspacer"></div>
+
+            <a href="https://www.w3schools.com" class="toplink">Gmail</a> 
+            <a href="https://www.w3schools.com" class="toplink">Images</a>
+
+            <a href="https://www.w3schools.com" id="square" class="toplink"><img src="https://www.muraldecal.com/en/img/nede39-jpg/folder/products-listado-merchanthover/wall-stickers-kit-9-circles.jpg" height="26"></a>
+            <input type="button" value="Sign In">
         </div>
+    
+        <div id="top2"></div>
 
         <div id="mid">
             <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
@@ -89,7 +124,5 @@
 
         
 
-        <div id="bot">
-            <p>test 3</p>
-        </div>
+        <div id="bot"></div>
     </html>
