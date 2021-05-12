@@ -1,47 +1,64 @@
-<style>
-    p {
-        color: red;
-    }
+    <style>
 
-    #one {
-        background-color: blue;
+        #top {
+            background-color: blue;
+            height: 18em;
+        }
 
-    }
+        #mid {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 6em;
+        }
 
-    #two {
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30em;
-    }
+        #bot {
+            background-color: orange;
+        }
+        
+        #logo {
+            display: flex;
+            width: 20em;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
 
-    #three {
-        background-color: orange;
-    }
-    
-    #googleImage {
-
-    }
-
-    #searchbox {
-        text-align: center;
-        border-radius: 1em;
-        border: 2px solid blue;
-    }
+        #searchbox {
+            border-radius: 1em;
+            border: 2px solid rgb(141, 141, 141);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40em;
+            height: 3em;
+        }
 
 
 
-</style>
-<html>
-    <div id="one">
-        <p>test</p>
-    </div>
-    <div id="two">
-        <img class="googleImage" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    </div>
-    <p id="searchbox">searchbox</p>
-    <div id="three">
-        <p>test 3</p>
-    </div>
-</html>
+    </style>
+    <html>
+        <div id="top">
+            <p>test</p>
+        </div>
+
+        <div id="mid">
+            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+
+        <div id="mid">
+            <form>
+                <input id="searchbox" type="text">
+            </form>
+        </div>
+        
+
+        
+
+        
+
+        <div id="bot">
+            <p>test 3</p>
+        </div>
+    </html>
