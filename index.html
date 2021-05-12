@@ -1,5 +1,8 @@
     <style>
 
+        #body {
+        }
+
         #top1 {
             height: 3em;
             display: flex;
@@ -7,12 +10,21 @@
         }
 
         #topspacer {
-            width: 109em;
+            width: 108em;
         }
 
         #top2 {
             height: 14em;
             display: flex;
+        }
+
+        .toplink1 {
+            margin-left: 1em;
+            margin-right: 2em;
+            text-decoration: none;
+            color:rgb(51, 51, 51);
+            font-size: 14px;
+            font-family: sans-serif;
         }
 
         .toplink {
@@ -28,6 +40,16 @@
             padding-top: 12;
         }
 
+        #signin {
+            color: white;
+            border-width: 0px;
+            border-radius: .5em;
+            width: 9em;
+            background-color: #2b7de9;
+            height: 2.8em;
+            margin-top: .25em;
+        }
+
         #mid {
             background-color: white;
             display: flex;
@@ -36,8 +58,32 @@
             height: 6em;
         }
 
-        #bot {
+        .botlink1 {
+            margin-left: 2em;
+            margin-right: 2em;
+            text-decoration: none;
+            color:rgb(51, 51, 51);
+            font-size: 14px;
+            font-family: sans-serif;
+        }
 
+        #bot {
+            height: 25em;
+        }
+
+        #bot2 {
+            height: 0em;
+            align-items: baseline;
+            display: flex;
+            line-height: 3em;
+        }
+
+        #botspacer1 {
+            width: 33em;
+        }
+
+        #botspacer2 {
+            width: 37em;
         }
         
         #logo {
@@ -87,9 +133,9 @@
 
     </style>
     <html>
-
+        <div id="body">
         <div id="top1">
-            <a href="https://www.w3schools.com" class="toplink">About</a> 
+            <a href="https://www.w3schools.com" class="toplink1">About</a> 
             <a href="https://www.w3schools.com" class="toplink">Store</a> 
 
             <div id="topspacer"></div>
@@ -98,7 +144,7 @@
             <a href="https://www.w3schools.com" class="toplink">Images</a>
 
             <a href="https://www.w3schools.com" id="square" class="toplink"><img src="https://www.muraldecal.com/en/img/nede39-jpg/folder/products-listado-merchanthover/wall-stickers-kit-9-circles.jpg" height="26"></a>
-            <input type="button" value="Sign In">
+            <input type="button" id="signin" value="Sign In">
         </div>
     
         <div id="top2"></div>
@@ -125,4 +171,21 @@
         
 
         <div id="bot"></div>
+
+        <div id="bot2">
+            <a href="https://www.w3schools.com" class="botlink1">Advertising</a> 
+            <a href="https://www.w3schools.com" class="toplink">Business</a>
+            <a href="https://www.w3schools.com" class="toplink">How Search works</a>
+            <div id="botspacer1"></div>
+            <a href="https://www.w3schools.com" class="toplink">Carbon neutral since 2007</a>
+            <div id="botspacer2"></div>
+            <a href="https://www.w3schools.com" class="toplink">Privacy</a>
+            <a href="https://www.w3schools.com" class="toplink">Terms</a>
+            <a href="https://www.w3schools.com" class="toplink">Settings</a>  
+
+            
+
+
+        </div>
+    </div>
     </html>
