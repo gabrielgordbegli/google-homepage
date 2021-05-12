@@ -1,8 +1,8 @@
     <style>
 
         #top {
-            background-color: blue;
-            height: 18em;
+            background-color: rgba(0, 0, 250, 0.178);
+            height: 17em;
         }
 
         #mid {
@@ -19,20 +19,45 @@
         
         #logo {
             display: flex;
-            width: 20em;
+            width: 18em;
             height: auto;
             justify-content: center;
             align-items: center;
         }
 
         #searchbox {
-            border-radius: 1em;
-            border: 2px solid rgb(141, 141, 141);
+            border-radius: 2em;
+            border: 1px solid rgb(141, 141, 141);
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 40em;
+            width: 43em;
             height: 3em;
+        }
+
+        #buttons {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3em;
+        }
+
+        #button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
         }
 
 
@@ -53,6 +78,12 @@
             </form>
         </div>
         
+        <div id="buttons">
+            <form>
+                <input id="button" type="button" value="Google Search">
+                <input id="button" type="button" value="I'm Feeling Lucky">
+            </form>
+        </div>
 
         
 
