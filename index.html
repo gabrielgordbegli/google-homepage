@@ -1,29 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
     <style>
-
-        #top1 {
-            height: 3em;
+        .maincontainer {
             display: flex;
-            line-height: 3em;
+            flex-direction: column;
         }
-
-        #topspacer {
-            width: 108em;
-        }
-
-        #top2 {
-            height: 14em;
+        .topleftandrightcontainer {
             display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 1em;
         }
-
-        .toplink1 {
+        .topleftcontainer {
+            flex-wrap: nowrap;
+            flex-direction: row;
             margin-left: 1em;
-            margin-right: 2em;
-            text-decoration: none;
-            color:rgb(51, 51, 51);
-            font-size: 14px;
-            font-family: sans-serif;
         }
-
+        .toprightcontainer {
+            flex-wrap: nowrap;
+            flex-direction: row;
+            position: absolute;
+            right: 0;
+        }
         .toplink {
             margin-right: 2em;
             text-decoration: none;
@@ -31,13 +35,13 @@
             font-size: 14px;
             font-family: sans-serif;
         }
-
-        #square {
-            height:3;
-            padding-top: 12;
+        .menu {
+            height: 26px;
+            vertical-align:sub;
+            margin-top: 1em;
+            margin-right: 1em;
         }
-
-        #signin {
+        .signin {
             color: white;
             border-width: 0px;
             border-radius: .5em;
@@ -45,77 +49,35 @@
             background-color: #2b7de9;
             height: 2.8em;
             margin-top: .25em;
+            margin-right: 1em;
         }
-
-        #mid {
-            background-color: white;
+        .middlecontainer {
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
-            height: 6em;
         }
-
-        .botlink1 {
-            margin-left: 2em;
-            margin-right: 2em;
-            text-decoration: none;
-            color:rgb(51, 51, 51);
-            font-size: 14px;
-            font-family: sans-serif;
-        }
-
-        #bot {
-            height: 25em;
-        }
-
-        #bot2 {
-            height: 3em;
-            align-items: center;
-            background-color: rgba(222, 222, 222, 0.22);
-            display: flex;
-            line-height: 3em;
-
-            position:absolute;
-            bottom:0;
-            width:99.5%;
-            height:3em;
-        }
-
-        #botspacer1 {
-            width: 33em;
-        }
-
-        #botspacer2 {
-            width: 37em;
-        }
-        
-        #logo {
-            display: flex;
+        .logo {
+            align-self: center;
             width: 17em;
             height: auto;
-            justify-content: center;
-            align-items: center;
+            margin-top: 15em;
         }
-
-        #searchbox {
+        .searchbox {
+            align-self: center;
             border-radius: 2em;
             border: 1px solid rgb(141, 141, 141);
-            display: flex;
-            justify-content: center;
-            align-items: center;
             width: 43em;
             height: 3em;
+            margin-top: 1em;
         }
-
-        #buttons {
-            background-color: white;
+        .buttonscontainer {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 3em;
+            padding-top: 1em;
         }
-
-        #button {
+        .button {
             background-color: #f8f9fa;
             border: 1px solid #f8f9fa;
             border-radius: 4px;
@@ -130,75 +92,87 @@
             text-align: center;
             cursor: pointer;
             user-select: none;
-
-        #bottomrightlinks {
-            justify-content: right;
         }
+        .bottomleftrightandmiddlecontainer {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 1em;
+            justify-content: space-between;
+
+            position:absolute;
+            bottom:0.5px;
+            left:0px;
+            width:100%;
+            height:60px;
+        }
+        .bottomleftcontainer {
+            flex-wrap: nowrap;
+            flex-direction: row;
+            margin-left: 1em;
+        }
+        .bottommiddlecontainer {
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+        .bottomrightcontainer {
+            flex-wrap: nowrap;
+            flex-direction: row;
 
         }
-
-
+        .bottomlink {
+            margin-right: 2em;
+            text-decoration: none;
+            color:rgb(51, 51, 51);
+            font-size: 14px;
+            font-family: sans-serif;
+        }
 
     </style>
-    <html>
-        <body>
-        <div id="top1">
-            <a href="https://www.w3schools.com" class="toplink1">About</a> 
-            <a href="https://www.w3schools.com" class="toplink">Store</a> 
+</head>
+<body class="maincontainer">
 
-            <div id="topspacer"></div>
-
+    <div class="topleftandrightcontainer">
+        <div class="topleftcontainer">
+            <a href="https://www.w3schools.com" class="toplink">About</a> 
+            <a href="https://www.w3schools.com" class="toplink">Store</a>
+        </div>
+        <div class="toprightcontainer">
             <a href="https://www.w3schools.com" class="toplink">Gmail</a> 
             <a href="https://www.w3schools.com" class="toplink">Images</a>
-
-            <a href="https://www.w3schools.com" id="square" class="toplink"><img src="https://www.muraldecal.com/en/img/nede39-jpg/folder/products-listado-merchanthover/wall-stickers-kit-9-circles.jpg" height="26"></a>
-            <input type="button" id="signin" value="Sign In">
+            <a href="https://www.w3schools.com" class="menu"><img class="menu" src="https://www.muraldecal.com/en/img/nede39-jpg/folder/products-listado-merchanthover/wall-stickers-kit-9-circles.jpg"></a>
+            <input type="button" class="signin" value="Sign In">
         </div>
-    
-        <div id="top2"></div>
+    </div>
 
-        <div id="mid">
-            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-        </div>
+    <div class=middlecontainer>
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <input class="searchbox" type="text">
 
-        <div id="mid">
+        <div class="buttonscontainer">
             <form>
-                <input id="searchbox" type="text">
+                <input class="button" type="button" value="Google Search">
+                <input class="button" type="button" value="I'm Feeling Lucky">
             </form>
         </div>
-        
-        <div id="buttons">
-            <form>
-                <input id="button" type="button" value="Google Search">
-                <input id="button" type="button" value="I'm Feeling Lucky">
-            </form>
+    </div>
+
+    <div class=bottomleftrightandmiddlecontainer>
+        <div class="bottomleftcontainer">
+            <a href="https://www.w3schools.com" class="bottomlink">Advertising</a> 
+            <a href="https://www.w3schools.com" class="bottomlink">Business</a>
+            <a href="https://www.w3schools.com" class="bottomlink">How Search works</a>
         </div>
-
-        
-
-        
-
-        <div id="bot"></div>
-
-        <div id="bot2">
-            <a href="https://www.w3schools.com" class="botlink1">Advertising</a> 
-            <a href="https://www.w3schools.com" class="toplink">Business</a>
-            <a href="https://www.w3schools.com" class="toplink">How Search works</a>
-            <div id="botspacer1"></div>
-            <a href="https://www.w3schools.com" class="toplink">Carbon neutral since 2007</a>
-            <div id="botspacer2"></div>
-
-            <div id="bottomrightlinks">
-                <a href="https://www.w3schools.com" class="toplink">Privacy</a>
-                <a href="https://www.w3schools.com" class="toplink">Terms</a>
-                <a href="https://www.w3schools.com" class="toplink">Settings</a>  
-            </div>
-
-
-            
-
-
+        <div class="bottommiddlecontainer">
+            <a href="https://www.w3schools.com" class="bottomlink">Carbon neutral since 2007</a>
         </div>
+        <div class="bottomrightcontainer">
+            <a href="https://www.w3schools.com" class="bottomlink">Privacy</a>
+            <a href="https://www.w3schools.com" class="bottomlink">Terms</a>
+            <a href="https://www.w3schools.com" class="bottomlink">Settings</a>  
+        </div>
+    </div>
 
 </body>
-    </html>
+</html>
